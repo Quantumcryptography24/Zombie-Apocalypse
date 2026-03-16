@@ -123,15 +123,15 @@ h1 {
   background-repeat: no-repeat;
 }
 .zombie.walker {
-  background-image: url("zombie_reg_2.png");
+  background-image: url("./zombie_reg_2.png");
 }
 
 .zombie.runner {
-  background-image: url("zombie_runner.png");
+  background-image: url("./zombie_runner.png");
 }
 
 .zombie.tank {
-  background-image: url("zombie_tank.png");
+  background-image: url("./zombie_tank.png");
 }
 
 
