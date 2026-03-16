@@ -31,6 +31,7 @@ h1 {
 #game {
   position: fixed;
   inset: 0;
+  z-index: 1;
   background: radial-gradient(circle at top, #1a3323 0, #050907 60%);
   border: 3px solid #6bff9b;
   border-radius: 12px;
@@ -49,13 +50,6 @@ h1 {
 #player .arm,
 #player .leg {
   background: #53b5ff;
-}
-
-.zombie .head,
-.zombie .body,
-.zombie .arm,
-.zombie .leg {
-  background: #ff5a5a;
 }
 
 .stickman .head {
@@ -120,6 +114,26 @@ h1 {
 .attack-flash .leg {
   box-shadow: 0 0 10px 3px rgba(255, 255, 0, 0.9);
 }
+
+.zombie {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.zombie.walker {
+  background-image: url("zombie_reg_2.png");
+}
+
+.zombie.runner {
+  background-image: url("zombie_runner.png");
+}
+
+.zombie.tank {
+  background-image: url("zombie_tank.png");
+}
+
 
 #hud {
   position: absolute;
@@ -220,18 +234,4 @@ button.primary {
   font-size: 11px;
   opacity: 0.85;
   z-index: 5;
-}
-
-.zombie.runner .head,
-.zombie.runner .body,
-.zombie.runner .arm,
-.zombie.runner .leg {
-  background: #ffb45a;
-}
-
-.zombie.tank .head,
-.zombie.tank .body,
-.zombie.tank .arm,
-.zombie.tank .leg {
-  background: #8f4aff;
 }
