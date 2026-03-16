@@ -505,6 +505,12 @@ function update(timestamp) {
   zombies.forEach((z) => {
     z.el.style.left = z.x - STICKMAN_WIDTH / 2 + "px";
     z.el.style.top = z.y - STICKMAN_HEIGHT + "px";
+
+    if (z.x < player.x) {
+      z.el.style.transform = "scaleX(1)";
+    } else {
+      z.el.style.transform = "scaleX(-1)";
+    }
   });
 
   playerHpEl.textContent =
