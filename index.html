@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Zombie Apocalypse</h1>
+
     <div id="game">
       <div id="player" class="stickman">
         <div class="head"></div>
@@ -15,15 +17,7 @@
         <div class="leg left-leg"></div>
         <div class="leg right-leg"></div>
       </div>
-
-      <div id="enemy" class="stickman zombie">
-        <div class="head"></div>
-        <div class="body"></div>
-        <div class="arm left-arm"></div>
-        <div class="arm right-arm"></div>
-        <div class="leg left-leg"></div>
-        <div class="leg right-leg"></div>
-      </div>
+      <div id="enemy" class="zombie walker"></div>
     </div>
 
     <div id="hud">
@@ -73,7 +67,8 @@
     </div>
 
     <p id="controls">
-      Controls: A / D to move, J to attack. Clear zombies to open the shop.
+      Controls: W A S D to move, J to melee, K to shoot. Clear zombies to open
+      the shop.
     </p>
 
     <script src="game.js"></script>
